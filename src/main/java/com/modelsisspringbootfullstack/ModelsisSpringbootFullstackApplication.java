@@ -22,16 +22,16 @@ public class ModelsisSpringbootFullstackApplication {
 		SpringApplication.run(ModelsisSpringbootFullstackApplication.class, args);
 	}
 
-//	@Bean
-//	CommandLineRunner start(AccountService accountService){
-//		repositoryRestConfiguration.exposeIdsFor(AppUser.class);
-//		return args -> {
-//			accountService.saveRole(new AppRole(null,"ADMIN"));
-//
-//			accountService.saveUser("admin","1234","1234");
-//			accountService.addRoleToUser("admin","ADMIN");
-//		};
-//	}
+	@Bean
+	CommandLineRunner start(AccountService accountService){
+		repositoryRestConfiguration.exposeIdsFor(AppUser.class);
+		return args -> {
+			accountService.saveRole(new AppRole(null,"ADMIN"));
+
+			accountService.saveUser("admin","1234","1234");
+			accountService.addRoleToUser("admin","ADMIN");
+		};
+	}
 
 	@Bean
 	BCryptPasswordEncoder getBCPE(){
