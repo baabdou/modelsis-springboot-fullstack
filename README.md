@@ -1,7 +1,8 @@
 # modelsis-springboot-fullstack
 
 ## Introduction
-Ce project est generé avec [Angular CLI] version 13.2.0. (Projet de gestion des produits et des types de produits)
+Ce projet est la partie backend qui consiste à gerer des produits et des types de produits.
+Il a été conçu avec java 8.
 
 
 ## Technologies utilisées
